@@ -1,0 +1,31 @@
+Date,Day of the Week,Steps,Sick,Work,Workout type,Errands,Transportation to class,# of classes I went to
+4/14/25,M,"11,103",N,Y,Weight,N,B,2
+4/15/25,T,"10,224",Y,N,Stairmaster,N,B,2
+4/16/25,W,"5,727",Y,N,Swim,N,B,3
+4/17/25,R,"9,951",N,N,N,N,B,4
+4/18/25,F,"14,659",N,Y,N,N,B,0
+4/19/25,Sat,"9,590",N,N,Stairmaster,N,na,0
+4/20/25,Sun,"9,122",N,N,Swim,Y,na,0
+4/21,M,9202,N,Y,Walk,N,B,2
+4/22,T,"10,174",N,N,Weight,N,B,2
+4/23,W,"6,918",N,N,yoga,N,B,3
+4/24,R,6852,N,N,Yoga,N,B,4
+4/25,F,8697,N,Y,na,N,B,0
+4/26/2025,Sat,10265,N,N,yoga,N,na,0
+4/27,Sun ,3726,N,N,yoga,Y,na,0
+4/28,M,8292,N,N,yoga,N,B,1
+4/29,T,8320,N,N,weights and yoga,N,B,2
+4/30,W,9477,N,N,yoga,N,B,0
+5/1,R,7198,N,N,yoga,N,B,2
+5/2,F,7225,N,Y,na,N,na,0
+5/3,Sat,30821,N,N,weights,N,na,0
+5/4,Sun,4372,N,N,N,N,na,0
+5/5,M,3983,N,N,yoga,,,0
+5/6,T,10376,Y,Y,N,Y,B,2
+5/7,W,8707,N,N,yoga,N,B,
+5/8,R,4115,N,N,yoga,N,na,0
+5/9,F,665,N,N,paddle,N,na,0
+5/10,Sat,66,N,N,paddle,N,na,0
+5/11,Sun,978,N,N,paddle,N,na,0
+5/12,M,2575,N,Y,yoga,Y,B,1
+5/13,t,13676,n,n,run,n,b,2

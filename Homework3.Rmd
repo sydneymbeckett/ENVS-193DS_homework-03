@@ -5,3 +5,20 @@ output: html_document
 
 https://github.com/sydneymbeckett/ENVS-193DS_homework-03.git
 
+```{r}
+library(tidyverse)
+library(here)
+library(gt)
+library(janitor)
+library(readxl)
+```
+
+**Problem 1**
+## a.
+I could calculate the mean number of steps I took each day to compare average step counts between days when I had class and days when I didn’t, because I think I walk more on days I have class because I walk between classes and from my bike. I could also compare the mean number of steps based on the type of exercise I did, since I expect activities like running to result in more steps than yoga or rest days.
+
+
+
+
+
+
