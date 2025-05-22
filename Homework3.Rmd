@@ -11,7 +11,12 @@ library(here)
 library(gt)
 library(janitor)
 library(readxl)
+ENVS193_FinalData_Sheet1 <- read.csv("ENVS193-FinalData - Sheet1.csv")
+ENVS193_FinalData_Sheet1$Steps <- as.numeric(gsub(",", "", ENVS193_FinalData_Sheet1$Steps)) +
+#filling the color depending on day of week
 ```
+
+
 
 **Problem 1**
 ## a.
@@ -19,38 +24,50 @@ I could calculate the mean number of steps I took each day to compare average st
 
 ## b.
 ```{r}
-personal_data <- ENVS193_FinalData_Sheet1 |> #reading in data
-  group_by(`Day of the Week`) |> #grouping data by day of week
-  summarise(mean_steps = mean(Steps, na.rm = TRUE)) #summarizing the data by taking the mean steps
+ENVS193_FinalData_Sheet1$Steps <- as.numeric(gsub(",", "", ENVS193_FinalData_Sheet1$Steps))
 
-ENVS193_FinalData_Sheet1$`Day of the Week` <- factor(ENVS193_FinalData_Sheet1$`Day of the Week`,
+```
+
+
+```{r}
+
+ENVS193_FinalData_Sheet1$Day.of.the.Week <- factor(ENVS193_FinalData_Sheet1$Day.of.the.Week,
                                 levels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")) #ordering by days of the week
 
-ggplot(ENVS193_FinalData_Sheet1, aes(x = `Day of the Week`, #using ggplot with my data and using day of week for x axis
+ggplot(ENVS193_FinalData_Sheet1, aes(x = Day.of.the.Week, #using ggplot with my data and using day of week for x axis
                           y = Steps, #using steps for y axis
-                          fill = `Day of the Week`))+ #filling the color depending on day of week
+                          fill = Day.of.the.Week))+ 
+  # Remove commas and convert to numeric
   geom_boxplot(alpha = 0.7, #creating a boxplot and changing transparency using alpha
+               
                ) +
   geom_jitter(width = 0.2, size = 1.5, alpha = 0.5, color = "black") + #using jitter to show individual data and changing width size transparency and color of the points
   scale_fill_brewer(palette = "Set2") + #custom color palette
+  scale_y_continuous(
+    limits = c(0, max(ENVS193_FinalData_Sheet1$Steps, na.rm = TRUE)),
+    breaks = scales::pretty_breaks(n = 5),
+    labels = scales::comma
+  ) +
   labs(title = "Distribution of Steps by Day of the Week", #naming the boxplot
        x = "Day of the Week", #naming x axis
        y = "Number of Steps") + #naming y axis
+  
   theme_minimal(base_size = 14) + #using a custom theme
   theme(legend.position = "none", #removing legend becuase it is uneccessary
         axis.text.x = element_text(angle = 45, hjust = 1)) #changes the day of the week to be at an angle so they take up less space
   
 ```
 
+
 ## c.
 Figure 1: Distribution of daily step counts by day of the week. Each box represents the range and median of steps taken, while the individual black points show the underlying data. This visualization highlights how activity levels vary throughout the week, with a higher median on Saturdays, and low variability on Tuesdays. 
 
 ## d. 
 ```{r}
-ENVS193_FinalData_Sheet1$`Day of the Week` <- factor(ENVS193_FinalData_Sheet1$`Day of the Week`,
+ENVS193_FinalData_Sheet1$Day.of.the.Week <- factor(ENVS193_FinalData_Sheet1$Day.of.the.Week,
                                 levels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")) #ordering by days of the week
 summary_table <- ENVS193_FinalData_Sheet1 |> #summarize data using my personal data
-  group_by(`Day of the Week`) |> #grouping the data by day of week
+  group_by(Day.of.the.Week) |> #grouping the data by day of week
   summarise(`Average Steps` = round(mean(Steps, na.rm = TRUE), 1))  # Round to 1 decimal
 summary_table |> 
   gt() |> #using gt package to create a table
@@ -58,7 +75,7 @@ summary_table |>
     title = "Average Steps by Day of the Week" #naming the table
   ) |>
   cols_label(
-    `Day of the Week` = "Day", #naming the title of the column on the left day
+    Day.of.the.Week = "Day", #naming the title of the column on the left day
     `Average Steps` = "Mean Steps" #naming the title of the column on the right mean steps
   )
 ```
