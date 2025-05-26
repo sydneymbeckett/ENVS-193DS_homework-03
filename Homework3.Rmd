@@ -24,7 +24,7 @@ I could calculate the mean number of steps I took each day to compare average st
 
 ## b.
 ```{r}
-ENVS193_FinalData_Sheet1$Steps <- as.numeric(gsub(",", "", ENVS193_FinalData_Sheet1$Steps))
+ENVS193_FinalData_Sheet1$Steps <- as.numeric(gsub(",", "", ENVS193_FinalData_Sheet1$Steps)) #making the step count a numeric value so they could be ordered lowest to highest
 
 ```
 
@@ -80,5 +80,29 @@ summary_table |>
   )
 ```
 
+**Problem 2**
+## a.
+An affective visualization of my step data could be a winding hiking trail that passes through a series of mountains, each labeled with a day of the week. The height of each mountain would represent the number of steps taken on that day—tall peaks for active days and gentle hills for quieter ones. Along the trail, small details like trees, footprints, or resting spots could hint at the emotions or experiences of each day, turning the data into a visual journey.
 
+## b.
+**include photo**
+
+## c.
+**include photo**
+
+## d.
+In my art I am showing the change in my daily movement(in steps) throughout the week.
+I found Jill Peltos paintings really inspiring, I liked the mountain art she did to show decline in ice sheets, it inspired me to use the height of a natural object to show the change across time. It also helped me understand how nature can evoke different emotions when paired with data.
+I chose to use colored pencils for my work because it allowed me to use more detail in terms of color and shape, over coding.
+I started by getting inspiration from other artists such as Peltos, I then created a sketch to start to decide what data I wanted to include, I decided to include the average step count of each day and then use a line to connect them so that the data could be shown a little more prominently. I then sketched it out using pencil and colored over using colored pencils, I decided to make there be different colors coming from the sun onto each day, and I had each color represent a different feeling in terms of energy. 
+
+**Problem 3**
+## a.
+This paper addresses the impact of MPA on landings and income per unit of effort. The tests they used includes a t-test. The predictor variable is the MPA status, inside vs outside the MPA and before vs after. The response variable are the landings or the income per unit of effort(LPUE, IPUE). This paper also includes a Wilcoxon test which is used alongside the t test to compare differences in the LPUE, IPUE and prices before and after the MPA implementation. 
+
+https://ars.els-cdn.com/content/image/1-s2.0-S0964569124004873-gr4_lrg.jpg
+https://ars.els-cdn.com/content/image/1-s2.0-S0964569124004873-gr2_lrg.jpg
+
+## b.
+If you inserted a figure in Part a: How clearly did the authors visually represent their statistics in figures? For example, are the x- and y-axes in a logical position? Do they show summary statistics (means and SE, for example) and/or model predictions, and if so, do they show the underlying data?
 
