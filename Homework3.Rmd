@@ -100,8 +100,13 @@ I started by getting inspiration from other artists such as Peltos, I then creat
 ## a.
 This paper addresses the impact of MPA on landings and income per unit of effort. The tests they used includes a t-test. The predictor variable is the MPA status, inside vs outside the MPA and before vs after. The response variable are the landings or the income per unit of effort(LPUE, IPUE). This paper also includes a Wilcoxon test which is used alongside the t test to compare differences in the LPUE, IPUE and prices before and after the MPA implementation. 
 
-https://ars.els-cdn.com/content/image/1-s2.0-S0964569124004873-gr4_lrg.jpg
-https://ars.els-cdn.com/content/image/1-s2.0-S0964569124004873-gr2_lrg.jpg
+![Figure 1](figure1.jpg)
+![Figure 2](figure2.jpg)
+
+
+
+
+
 
 ## b.
 
@@ -111,4 +116,4 @@ The x axes are logically organized by the categorical variable and the y axes ar
 These figures use minimal clutter, different plots are clearly laid out, the icons for different species are small and dont distract, and the use of grayscale for the bars avoids u necessary color while still making a clear distinction. There is no redundant gridline use, flashy colors or other effects that reduce the ratio of data:ink.
 
 ## d.
-kjbh
+My first recommendation would be to clarify the units on the y axis a little bit more, ex: "mean log(LPUE)" or "income per trip", but switching to something like "Mean log(LPUE) (kg/hour) and "income per trip(USD)" might add some clarity for a less knowledgeable audience. Also, some of the panels show percentages and p values but not consistently, so using a small legend to explain what the change refers to would add a lot of clarity for the reader. Including the raw data points alongside the smooth trend line would also be helpful, could be through semi transparent dots(jittered if needed), I think it would just help to develop the figure to be able to see variability. Lastly, while the x axis name, "before"/"after" is very simple, I think it would add a lot more clarity to add another word or two to describe what the before and after are refferring to. 
