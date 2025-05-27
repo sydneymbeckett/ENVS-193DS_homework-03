@@ -111,3 +111,4 @@ The x axes are logically organized by the categorical variable and the y axes ar
 These figures use minimal clutter, different plots are clearly laid out, the icons for different species are small and dont distract, and the use of grayscale for the bars avoids u necessary color while still making a clear distinction. There is no redundant gridline use, flashy colors or other effects that reduce the ratio of data:ink.
 
 ## d.
+kjbh
