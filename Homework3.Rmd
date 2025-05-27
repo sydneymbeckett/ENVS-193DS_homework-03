@@ -85,10 +85,12 @@ summary_table |>
 An affective visualization of my step data could be a winding hiking trail that passes through a series of mountains, each labeled with a day of the week. The height of each mountain would represent the number of steps taken on that day—tall peaks for active days and gentle hills for quieter ones. Along the trail, small details like trees, footprints, or resting spots could hint at the emotions or experiences of each day, turning the data into a visual journey.
 
 ## b.
-**include photo**
+![Data Draft ](DataDraft.jpeg)
+
 
 ## c.
-**include photo**
+
+
 
 ## d.
 In my art I am showing the change in my daily movement(in steps) throughout the week.
