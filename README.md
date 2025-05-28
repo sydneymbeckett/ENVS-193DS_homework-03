@@ -12,8 +12,11 @@ Ocean & Coastal Management, Volume 261, 2025, 107502, ISSN 0964-5691, https://do
 Data and file information:
 
 ENVS-193DS_homework-03.Rproj
+
 README.md
+
 code = code folder, includes Homework3.Rmd(rmd file with homework code)
+
 data = data folder, includes ENVS-193-FinalData - Sheet1.csv(personal data)
 
 Link to rendered output:
