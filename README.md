@@ -9,14 +9,13 @@ Evaluation of MPA effects on small-scale fisheries: A long-term landings-based m
 Ocean & Coastal Management, Volume 261, 2025, 107502, ISSN 0964-5691, https://doi.org/10.1016/j.ocecoaman.2024.107502.
 
 
-Data and file information
-├── ENVS-193DS_homework-03.Rproj
-├── README.md
-├── code                                            # code folder
-│   ├── Homework3.Rmd                               # rmd file with homework code
-│
-└── data                                            # data folder
-    └── ENVS-193-FinalData - Sheet1.csv
+Data and file information:
+
+ENVS-193DS_homework-03.Rproj
+README.md
+code = code folder, includes Homework3.Rmd(rmd file with homework code)
+data = data folder, includes ENVS-193-FinalData - Sheet1.csv(personal data)
 
 Link to rendered output:
+
 https://github.com/sydneymbeckett/ENVS-193DS_homework-03.git
