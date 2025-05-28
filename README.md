@@ -19,10 +19,6 @@ code = code folder, includes Homework3.Rmd(rmd file with homework code)
 
 data = data folder, includes ENVS-193-FinalData - Sheet1.csv(personal data)
 
-Figure 1 = Draft of affective visualization
-
-Figure 2 = Affective visualization
-
 Homework 3.html = HTML link
 
 Link to rendered output:
