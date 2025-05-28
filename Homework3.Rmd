@@ -1,13 +1,15 @@
 ---
-title: "Homework 3 by Sydney Beckett"
+html_document:
+  toc: true
+  toc_float: true
+author: "Sydney Beckett"
 date: "05/28/25"
-output: html_document
+title: "Homework 3"
 ---
 
 https://github.com/sydneymbeckett/ENVS-193DS_homework-03.git
 
-```{r, message=FALSE, warning=FALSE}
-#making sure no messages show from loading in packages
+```{r setup, include=TRUE, warning=FALSE, message=FALSE}
 library(tidyverse)
 library(here)
 library(gt)
@@ -20,6 +22,7 @@ ENVS193_FinalData_Sheet1 <- read.csv("data/ENVS193-FinalData - Sheet1.csv") #rea
 
 
 **Problem 1**
+
 ## a.
 
 I could calculate the mean number of steps I took each day to compare average step counts between days when I had class and days when I didn’t, because I think I walk more on days I have class because I walk between classes and from my bike. I could also compare the mean number of steps based on the type of exercise I did, since I expect activities like running to result in more steps than yoga or rest days.
@@ -64,7 +67,9 @@ ggplot(ENVS193_FinalData_Sheet1, aes(x = Day.of.the.Week, #using ggplot with my 
 
 
 ## c.
-Figure 1: Distribution of daily step counts by day of the week. Each box represents the range and median of steps taken, while the individual black points show the underlying data. This visualization highlights how activity levels vary throughout the week, with a higher median on Saturdays, and low variability on Tuesdays. 
+Figure 1: Distribution of daily step counts by day of the week.
+
+Each box represents the range and median of steps taken, while the individual black points show the underlying data. This visualization highlights how activity levels vary throughout the week, with a higher median on Saturdays, and low variability on Tuesdays. 
 
 ## d. 
 ```{r}
@@ -85,6 +90,7 @@ summary_table |>
 ```
 
 **Problem 2**
+
 ## a.
 An affective visualization of my step data could be a winding hiking trail that passes through a series of mountains, each labeled with a day of the week. The height of each mountain would represent the number of steps taken on that day—tall peaks for active days and gentle hills for quieter ones. Along the trail, small details like trees, footprints, or resting spots could hint at the emotions or experiences of each day, turning the data into a visual journey.
 
@@ -105,6 +111,7 @@ I chose to use colored pencils for my work because it allowed me to use more det
 I created a sketch to start to decide what data I wanted to include, I decided to include the average step count of each day and then use a line to connect them so that the data could be shown a little more prominently. I then sketched it out using pencil and colored over using colored pencils, I decided to make there be different colors coming from the sun onto each day, and I had each color represent a different feeling in terms of energy. 
 
 **Problem 3**
+
 ## a.
 This paper addresses the impact of MPA on landings and income per unit of effort. The tests they used includes a t-test. The predictor variable is the MPA status, inside vs outside the MPA and before vs after. The response variable are the landings or the income per unit of effort(LPUE, IPUE). This paper also includes a Wilcoxon test which is used alongside the t test to compare differences in the LPUE, IPUE and prices before and after the MPA implementation. 
 
